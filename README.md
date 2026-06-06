@@ -1,7 +1,7 @@
 # 🎬 CineFlex – Movie Booking System
 
 <p align="center">
-  <img src="docs/CineFlex_ER(software).png" alt="CineFlex ER Diagram" width="900">
+  <img src="cineflex.png" alt="CineFlex" width="700">
 </p>
 
 <p align="center">
@@ -151,111 +151,6 @@ The database follows relational design principles and normalization (3NF).
 
 ---
 
-## 📂 Project Structure
-
-```text
-CineFlex/
-│
-├── admin/
-│   ├── movies/
-│   ├── shows/
-│   ├── theaters/
-│   ├── users/
-│   └── bookings/
-│
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── includes/
-│   ├── config.php
-│   ├── db.php
-│   └── functions.php
-│
-├── user/
-│   ├── login.php
-│   ├── register.php
-│   ├── bookings.php
-│   └── reviews.php
-│
-├── database/
-│   └── cineflex.sql
-│
-├── index.php
-└── README.md
-```
-
----
-
-## ⚙️ Installation
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/yourusername/cineflex.git
-```
-
-### 2. Move Project
-
-Copy project folder into:
-
-```text
-xampp/htdocs/
-```
-
-### 3. Start Services
-
-Open XAMPP Control Panel and start:
-
-- Apache
-- MySQL
-
-### 4. Create Database
-
-Open phpMyAdmin:
-
-```text
-http://localhost/phpmyadmin
-```
-
-Create database:
-
-```sql
-CREATE DATABASE cineflex;
-```
-
-### 5. Import SQL File
-
-Import:
-
-```text
-database/cineflex.sql
-```
-
-### 6. Configure Database Connection
-
-Update:
-
-```php
-config.php
-```
-
-```php
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "cineflex";
-```
-
-### 7. Run Project
-
-```text
-http://localhost/cineflex
-```
-
----
-
 ## 🔐 User Roles
 
 ### Customer
@@ -290,31 +185,6 @@ The project was developed using a modular approach:
 
 ---
 
-## 🚀 Future Enhancements
-
-- Online Payment Gateway
-- QR Code Tickets
-- Email Notifications
-- Mobile Application
-- Real-Time Seat Locking
-- Advanced Analytics Dashboard
-- Multi-Cinema Support
-
----
-
-## 📸 Screenshots
-
-Add screenshots here:
-
-```text
-docs/screenshots/homepage.png
-docs/screenshots/movie-details.png
-docs/screenshots/booking.png
-docs/screenshots/admin-dashboard.png
-```
-
----
-
 ## 🧪 Testing
 
 The system was tested for:
@@ -328,29 +198,3 @@ The system was tested for:
 - Responsive Design
 
 ---
-
-## 👨‍💻 Team Members
-
-| Name | Roll Number |
-|--------|------------|
-| Muhammad Ghulam Mujtaba Qureshi | 24K-0535 |
-| Muhammad Adil Saeed | 24K-0705 |
-| Muhammad Haseem Samo | 24K-0666 |
-
----
-
-## 🎓 Academic Information
-
-**Course:** Database Systems  
-**Department:** Computer Science  
-**University:** FAST-NUCES Karachi Campus  
-**Instructor:** Mr. Shoaib Rauf  
-**Semester:** Spring 2026
-
----
-
-## 📄 License
-
-This project is developed for academic and educational purposes.
-
-© 2026 CineFlex Team
