@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  min-height: 100vh;
+  background: #181818;
+  position: relative;
+  overflow-x: hidden;
+}
+.bg-image {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 1;
+  background: url('https://i.ibb.co/PsGv83tr/Background.jpg') no-repeat center center/cover;
+  filter: blur(4px) brightness(0.7);
+  width: 100vw;
+  height: 100vh;
+}
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0.55);
+  width: 100vw;
+  height: 100vh;
+}
+.form-main {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.cineflex-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.7rem;
+  color: #e50914;
+  letter-spacing: 2.5px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  margin-top: -1.5rem;
+  text-shadow: 0 2px 12px #0009;
+}
+.form-card {
+  background: rgba(25, 25, 25, 0.89);
+  border-radius: 1.3rem;
+  box-shadow: 0 8px 36px #000b;
+  padding: 2.6rem 2.7rem 2.2rem 2.7rem;
+  min-width: 340px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+}
+.form-card h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.form-card label {
+  margin-bottom: .4rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: .6px;
+  font-size: 1.08rem;
+  display: block;
+  text-align: left;
+  margin-left: .1rem;
+}
+.form-card input[type="email"],
+.form-card input[type="password"],
+.form-card input[type="text"],
+.form-card input[type="tel"] {
+  background: #181818;
+  border: 1.5px solid #444;
+  border-radius: .45rem;
+  color: #fff;
+  font-size: 1.09rem;
+  padding: .85rem 1.1rem;
+  margin-bottom: 1.7rem;
+  width: 100%;
+  outline: none;
+  transition: border .18s;
+  box-sizing: border-box;
+  font-family: inherit;
+  display: block;
+}
+.form-card input:focus {
+  border: 1.5px solid #e50914;
+}
+.form-card button {
+  width: 100%;
+  padding: .96rem 0;
+  font-weight: 700;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  box-shadow: 0 3px 16px #e5091422;
+  transition: background .18s;
+}
+.form-card button:hover {
+  background: #b0060f;
+}
+.form-card .form-link {
+  color: #aaa;
+  text-align: center;
+  font-size: 1.03rem;
+  margin: .8rem 0 0.4rem 0;
+}
+.form-card .form-link a {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: 600;
+}
+.form-card .form-link a:hover {
+  text-decoration: underline;
+}
+.form-card .forgot-link {
+  color: #aaa;
+  text-align: right;
+  font-size: .98rem;
+  margin-bottom: 1.2rem;
+}
+.form-card .forgot-link a {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: 500;
+}
+.form-card .forgot-link a:hover {
+  text-decoration: underline;
+}
+.form-card .error {
+  background: #3d0303;
+  color: #ff9696;
+  border-radius: .5rem;
+  padding: .7rem 1rem;
+  margin-bottom: .8rem;
+  font-size: 1rem;
+  text-align: center;
+  border: 1.5px solid #e50914;
+}
+.footer {
+  position: relative;
+  z-index: 4;
+  background: #181818e6;
+  color: #aaa;
+  padding: 2.2rem 0 1.6rem 0;
+  margin-top: 2rem;
+  font-size: .98rem;
+  width: 100vw;
+  min-width: 300px;
+  border-top: 1.5px solid #232323;
+  bottom: 0;
+}
+.footer .footer-links {
+  max-width: 1100px;
+  margin: 0 auto 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+}
+.footer .footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color .11s;
+  opacity: .94;
+}
+.footer .footer-links a:hover {
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .form-card { padding: 1.2rem .8rem 1rem .8rem; min-width: 98vw; }
+  .form-card h2 { font-size: 1.5rem; }
+  .cineflex-title { font-size: 1.8rem; }
+}
